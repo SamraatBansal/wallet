@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #303030;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #2c2d30;
+}
+
+nav > div {
+  display: flex;
+}
+
+nav > div > button {
+  margin-left: 1rem;
+}
+
+@media (max-width: 400px) {
+  nav > h1 {
+    max-width: 90px;
+  }
+}
+
+h2 {
+  padding: 0 15vw;
+}
+
+.wallet-adapter-button,
+.wallet-adapter-modal-wrapper {
+  font: inherit;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14vw, 1fr));
+  gap: 2rem;
+
+  position: relative;
+  max-width: 70vw;
+  padding: 0 15vw;
+}
+
+.card-grid .card {
+  display: inline-grid;
+  place-content: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+
+  border: 0.4rem solid white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.card-grid .card img {
+  max-width: 12rem;
+  border-radius: 0.4rem;
+}
+
+.card-grid .card h3 {
+  margin: 0.3rem 0;
+  max-width: 12rem;
+}
+
+.card-grid .card button {
+  display: inline-block;
+  margin: 0.1rem;
+
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: #fff2;
+  backdrop-filter: blur(8px);
+
+  border: 0.25px solid #fff4;
+  border-radius: 0.4rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.counter {
+  font-variant-numeric: tabular-nums;
+}
